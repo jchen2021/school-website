@@ -1,0 +1,26 @@
+{
+  "name": "school-website",
+  "version": "1.0.0",
+  "description": "better school website assignment for comp sci ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jchen2021/school-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jchen2021/school-website/issues"
+  },
+  "homepage": "https://github.com/jchen2021/school-website#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
