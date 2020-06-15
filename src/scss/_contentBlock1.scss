@@ -1,0 +1,26 @@
+.welcomePage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.welcomePage h1{
+    text-align: center;
+    font-size: 6rem;
+    z-index: 1;
+    font-family: "Cookie";
+    padding:2%;
+    margin:2%;
+    background-color: goldenrod;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

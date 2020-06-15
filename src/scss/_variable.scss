@@ -1,0 +1,60 @@
+$colors:(
+    primary:#234561,
+    secondary:#c22f2f,
+    basic:rgba(0, 0, 0, 0),
+    clear:#fff,
+
+);
+@function color($color-name){
+    @return map-get($colors, $color-name);
+}
+
+$anim-speed: 0.3s;
+$phone: 450px;
+$tablet: 900px;
+$ipad:1100px;
+$laptop:  1700px;
+$desktop: 2100px;
+
+
+@mixin phone{
+  @media(max-width: #{$phone}){
+    @content;
+  }
+}
+@mixin tablet{
+    @media(max-width: #{$tablet}){
+      @content;
+    }
+  }
+  @mixin ipadHorizontal {
+    @media(max-width:#{$ipad}){
+      @content;
+    }
+    
+  }
+  @mixin laptop{
+    @media(max-width: #{$laptop}){
+      @content;
+    }
+  }
+  @mixin desktop{
+    @media(max-width: #{$desktop}){
+      @content;
+    }
+  }
+
+  @mixin flex-collum{
+    @content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;  
+  }
+  @mixin flex-row{
+    @content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+  }
