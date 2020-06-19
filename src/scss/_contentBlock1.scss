@@ -1,13 +1,12 @@
 
 .welcomePage{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    @include flex-row{
+    margin-top:-5%;
+    height:100%;
+    @include flex-collum{
 
     }
 }
-.welcomeText{
+.welcomeTitle{
     text-align: center;
     font-size: 6rem;
     z-index: 1;
@@ -15,15 +14,25 @@
     padding:2%;
     margin:2%;
 }
-.mwelcomeParagraph{
-    top:0;
-    left:0;
+.welcomeParagraph{
+    margin-top:-3rem;
     text-align: center;
-    font-size: 3rem;
     font-family: "Cookie";
+    @include desktop{
+        font-size: 2.5rem;
+    }
+    @include tablet{
+        font-size:1.7rem;
+    }
+    
 
 }
-.video{
-    width: 100vh;
-    height: 100vh;
+.video-container{
+    height:55vh;
+    border: solid 2px white;
+    video{
+        max-width:100%;
+        max-height:100%;
+        align-items:center;
+    }
 }
