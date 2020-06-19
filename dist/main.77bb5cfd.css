@@ -1,0 +1,185 @@
+.navigationBar {
+  height: 16%;
+  width: 100vh;
+  z-index: 0;
+  background-color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  border-radius: 2rem;
+}
+@media (max-width: 2100px) {
+  .navigationBar {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.logo {
+  height: 15vh;
+  width: auto;
+  padding-top: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo img {
+  align-items: center;
+  max-width: 100%;
+  max-height: 60%;
+}
+
+.nav-menu {
+  height: 0;
+  padding-bottom: 0.5rem;
+  list-style-type: none;
+  overflow: hidden;
+}
+.nav-menu a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  margin: 1rem auto;
+}
+@media (max-width: 2100px) {
+  .nav-menu {
+    padding: 0;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+  }
+  .nav-menu a {
+    font-size: 1.1rem;
+    padding: 1rem 0.3rem;
+  }
+}
+
+.sub-nav {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 60rem;
+  z-index: 1;
+  right: 0;
+}
+.sub-nav a {
+  color: #be8a07;
+  background-color: white;
+  text-align: center;
+  display: block;
+}
+
+.nav-sections:before {
+  position: relative;
+  width: 0;
+  height: 3px;
+  left: 0;
+  background-color: black;
+  display: none;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.nav-items a:hover {
+  background-color: #ffda08;
+  border-radius: 1.2rem;
+  border: 0.2rem solid black;
+}
+
+.sub-nav:hover .nav-sections:before {
+  width: 100%;
+}
+
+.nav-items:hover .sub-nav {
+  display: block;
+  width: 12rem;
+  border-radius: 0.5rem;
+  border: soli gold 0.1rem;
+}
+
+@media (max-width: 1700px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.welcomePage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.welcomeText {
+  text-align: center;
+  font-size: 6rem;
+  z-index: 1;
+  font-family: "Cookie";
+  padding: 2%;
+  margin: 2%;
+}
+
+.mwelcomeParagraph {
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Cookie";
+}
+
+.video {
+  width: 100vh;
+  height: 100vh;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background: goldenrod;
+  z-index: 1;
+}
+
+.header {
+  background-size: cover;
+  align-items: center;
+  height: 95vh;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.button {
+  position: absolute;
+  display: block;
+  top: 65%;
+  left: 43.5%;
+  width: 15rem;
+  z-index: 1;
+  margin: 0.5rem auto;
+  border: none;
+  background-color: gold;
+  color: black;
+  padding: 1.4rem 2.8rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0 8px 0 #1b383b;
+  text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */
