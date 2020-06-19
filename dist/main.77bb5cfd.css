@@ -139,6 +139,144 @@
   height: 100vh;
 }
 
+.CB2 {
+  top: 0;
+  height: 50vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media (max-width: 2100px) {
+  .CB2 {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.CB2 img {
+  width: auto;
+  height: 80%;
+}
+@media (max-width: 900px) {
+  .CB2 img {
+    height: 70%;
+  }
+}
+@media (max-width: 450px) {
+  .CB2 img {
+    height: 55%;
+  }
+}
+
+.title {
+  color: goldenrod;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+@media (max-width: 2100px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .title {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 450px) {
+  .title {
+    font-size: 1rem;
+  }
+}
+
+.readMore {
+  color: #eed7db;
+  font-style: underline;
+  font-size: 1.5rem;
+  text-align: right;
+  padding-right: 0.8%;
+}
+@media (max-width: 2100px) {
+  .readMore {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .readMore {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 450px) {
+  .readMore {
+    font-size: 0.8rem;
+  }
+}
+
+.message-main {
+  padding: 2%;
+  color: #f7eee1;
+}
+@media (max-width: 2100px) {
+  .message-main {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 900px) {
+  .message-main {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 450px) {
+  .message-main {
+    font-size: 0.8rem;
+  }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 50%;
+  height: 75%;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  align-items: center;
+}
+
+.flip-card-inner {
+  width: 3rem;
+  height: 5rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  width: 3rem;
+  height: 5rem;
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  width: 3rem;
+  height: 5rem;
+  transform: rotateY(180deg);
+}
+
 html {
   margin: 0;
   padding: 0;
