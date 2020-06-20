@@ -9,14 +9,21 @@
             justify-content: space-evenly;
         }
     }
+
+    @include phone{
+        @include flex-collum{
+
+        }
+    }
     img{
+        padding:5%;
         width: auto;
         height:80%;
         @include tablet{
             height:70%;
         }
         @include phone{
-            height: 55%;
+            height: 45%;
         }
     }
 }
@@ -59,8 +66,11 @@
     @include desktop{
         font-size: 1.8rem;
     }
+    @include laptop{
+        font-size: 1.5rem;
+    }
     @include tablet{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     @include phone{
         font-size: 0.8rem;

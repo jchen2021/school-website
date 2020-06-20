@@ -106,8 +106,11 @@
   float: right;
   padding: 0.8rem 0.8rem 0 0;
 
-  @include laptop{
+  @include desktop{
     visibility: hidden;
+  }
+  @include tablet{
+    visibility:visible;
   }
    
 }
