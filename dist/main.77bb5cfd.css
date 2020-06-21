@@ -1,5 +1,5 @@
 .navigationBar {
-  height: 16%;
+  height: 15vh;
   width: 100vw;
   z-index: 2;
   background-color: white;
@@ -7,18 +7,25 @@
   font-weight: bold;
   border-radius: 2rem;
 }
-@media (max-width: 2100px) {
+@media (max-width: 1500px) {
   .navigationBar {
-    justify-content: space-between;
     display: flex;
+    align-items: center;
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 900px) {
+  .navigationBar {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
 }
 
 .logo {
-  height: 15vh;
+  height: 14vh;
   width: auto;
   padding-top: 0.2rem;
   display: flex;
@@ -45,79 +52,96 @@
   text-align: center;
   margin: 1rem auto;
 }
-@media (max-width: 1700px) {
+@media (max-width: 1500px) {
   .nav-menu {
     padding: 0;
-    height: 10rem;
+    height: 100%;
+    width: 45%;
     display: flex;
     align-items: center;
   }
   .nav-menu a {
-    font-size: 1.1rem;
-    padding: 1rem 0.3rem;
-  }
-  .nav-menu a.anchor {
+    font-size: 1.8rem;
+    padding: 1.5rem 1.5rem;
     display: block;
-    position: relative;
-    top: -250px;
-    visibility: hidden;
   }
+}
+@media (max-width: 1500px) and (max-width: 900px) {
+  .nav-menu {
+    height: 5rem;
+    width: 30%;
+    text-align: right;
+    float: left;
+    display: none;
+  }
+  .nav-menu a {
+    font-size: 1.2rem;
+    padding: 0.7rem 0.7rem;
+  }
+  .nav-menu .nav-menu:hover {
+    display: block;
+  }
+}
+
+.nav-items {
+  margin: 3%;
+}
+
+.nav-sections {
+  max-height: 100%;
+  display: block;
+  padding: 5%;
 }
 
 .sub-nav {
   display: none;
-  position: absolute;
-  width: 200px;
-  left: 60rem;
+  width: 15rem;
   z-index: 1;
-  right: 0;
   overflow: auto;
 }
 .sub-nav a {
   color: #be8a07;
   background-color: white;
   text-align: center;
+  padding: 3px 5px;
+}
+.sub-nav a:hover {
+  border-radius: 1.2rem;
+  border: solid black 0.2rem;
+  background-color: rgba(255, 215, 0, 0.6);
+}
+
+.sub-nav:hover .nav-sections:before {
   display: block;
 }
 
-.nav-sections:before {
-  position: fixed;
-  background-color: black;
-  display: none;
-  visibility: hidden;
-  transition: all 0.3s ease-out;
-}
-@media (max-width: 2100px) {
-  .nav-sections:before {
-    height: 5px;
-  }
-}
-@media (max-width: 1700px) {
-  .nav-sections:before {
-    height: 3px;
-  }
+.nav-items:hover .sub-nav {
+  border-radius: 0px 0px 10px 10px;
+  display: block;
+  width: 14rem;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  background-color: white;
 }
 
-.nav-items a:hover {
+.nav-sections {
+  position: relative;
+  color: black;
+}
+
+.nav-sections:hover {
+  display: block;
+  margin-bottom: 15px;
   background-color: #ffda08;
   border-radius: 1.2rem;
   border: 0.2rem solid black;
 }
 
-.sub-nav:hover .nav-sections:before {
-  width: 100%;
-}
-
-.nav-items:hover .sub-nav {
-  display: block;
-  width: 12rem;
-  border-radius: 0.5rem;
-  border: soli gold 0.1rem;
-}
-
 .hamburger {
-  position: relative;
-  height: 11.75vh;
+  position: absolute;
+  height: 8vh;
   float: right;
   padding: 0.8rem 0.8rem 0 0;
 }
@@ -133,8 +157,7 @@
 }
 
 .welcomePage {
-  margin-top: -5%;
-  height: 100%;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,17 +166,46 @@
 
 .welcomeTitle {
   text-align: center;
-  font-size: 6rem;
   z-index: 1;
   font-family: "Cookie";
   padding: 2%;
   margin: 2%;
 }
+@media (max-width: 1500px) {
+  .welcomeTitle {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 900px) {
+  .welcomeTitle {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .welcomeTitle {
+    font-size: 1.5rem;
+  }
+}
 
-.welcomeParagraph {
-  margin-top: -3rem;
+.welcomeSub {
   text-align: center;
   font-family: "Cookie";
+}
+@media (max-width: 2100px) {
+  .welcomeSub {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .welcomeSub {
+    font-size: 2rem;
+  }
+}
+
+.welcomeParagraph {
+  text-align: center;
+  font-family: "Cookie";
+  width: 58vw;
 }
 @media (max-width: 2100px) {
   .welcomeParagraph {
@@ -167,18 +219,34 @@
 }
 
 .video-container {
-  height: 55vh;
+  margin-top: -2%;
+  width: auto;
   border: solid 2px white;
 }
 .video-container video {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   align-items: center;
+}
+@media (max-width: 2100px) {
+  .video-container {
+    height: 65vh;
+  }
+}
+@media (max-width: 1500px) {
+  .video-container {
+    height: 50vh;
+  }
+}
+@media (max-width: 900px) {
+  .video-container {
+    height: 40vh;
+  }
 }
 
 .CB2 {
   top: 0;
-  height: 50vh;
+  height: 55vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -217,9 +285,11 @@
 }
 
 .title {
+  padding: 1.5%;
   color: goldenrod;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
+  border-bottom: 5px solid rgba(255, 192, 203, 0.6);
 }
 @media (max-width: 2100px) {
   .title {
@@ -238,20 +308,26 @@
 }
 
 .readMore {
-  color: #eed7db;
+  display: block;
+  color: gold;
   font-style: underline;
   font-size: 1.5rem;
   text-align: right;
-  padding-right: 0.8%;
+  float: right;
 }
 @media (max-width: 2100px) {
   .readMore {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 1500px) {
+  .readMore {
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 900px) {
   .readMore {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 450px) {
@@ -262,16 +338,20 @@
 
 .message-main {
   padding: 2%;
+  margin: 5%;
   color: #f7eee1;
+  text-align: center;
 }
 @media (max-width: 2100px) {
   .message-main {
-    font-size: 1.8rem;
+    margin-top: 2%;
+    font-size: 2.3rem;
   }
 }
-@media (max-width: 1700px) {
+@media (max-width: 1500px) {
   .message-main {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    margin-top: -3.3%;
   }
 }
 @media (max-width: 900px) {
