@@ -1,20 +1,19 @@
 .navigationBar{
-    height: 16%;
+    height: 15.5vh;
     width: 100vw;
     z-index: 2;
     background-color:rgba((color(clear)), 1);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     border-radius: 2rem;
-    @include desktop{
-        @include flex-row{
-        justify-content: space-between;
-        }
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .logo{
-    height:15vh;
+    height:14.5vh;
     width: auto;
     padding-top: 0.2rem;
     @include flex-collum{
@@ -27,91 +26,67 @@
 }
 
 .nav-menu {
+  display: block;
     height: 0;
-    padding-bottom: 0.5rem;
-    list-style-type: none;
-    overflow: hidden;
+    display: flex;
+    padding:2%;
+    list-style: none;
+    align-items: center;
     a{
-      font-size: 1rem;
       text-decoration: none;
       color: black;
-      text-align: center;
-      margin: 1rem auto;
     }
-    @include laptop{
-    padding: 0;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-      a {
-        font-size: 1.1rem;
-        padding: 1rem 0.3rem;
-      }
-      a.anchor{
-      display: block;
-      position: relative;
-      top: -250px;
-      visibility: hidden;
-      }
-    }
-  }
-  
+
+}
+.nav-items{
+  position: relative;
+  font-size: 1.8rem;
+  padding: 1rem 1.8rem;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  display:block;
+}
 .sub-nav {
-    display: none;
-    position: absolute;
-    width: 200px;
-    left:60rem;
-    z-index: 1;
-    right: 0;
-    overflow: auto;
-    a{
-      color: rgb(190, 138, 7);
-      background-color: white;
-      text-align: center;
-      display: block;
-    }
-  }
-.nav-sections:before {
-    position: fixed;
-    background-color: black;
     display:none;
-    visibility: hidden;
-    transition: all 0.3s ease-out;
-    @include desktop{
-      height: 5px;
-    }
-    @include laptop{
-      height:3px;
+    position: absolute;
+    width: 12rem;
+    list-style: none;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    padding:1rem;
+    border-radius: 0px 0px 5px 5px;
+    a{
+      text-decoration: none;
+      color: rgb(190, 138, 7);
+      display: block;
+      text-align: center;
+      padding: 7px 0px;
     }
 }
-.nav-items a:hover{
+
+
+.nav-sections:hover{
+  background-color: rgb(2255, 218, 8);
+  border-radius: 1.2rem;
+  border: 0.2rem solid black;
+  display: block;
+  padding:1rem;
+}
+
+.nav-items:hover .sub-nav {
+    display: block;
+    overflow: hidden;
+  }
+
+.sub-nav a:hover{
     background-color: rgb(255, 218, 8);
     border-radius: 1.2rem;
     border: 0.2rem solid black;
 }
-.sub-nav:hover .nav-sections:before{
-    width: 100%;
-
+.nav-sections:before {
+  position: fixed;
+  align-items: center;
+  display: block;
 }
-.nav-items:hover .sub-nav{
-    display: block;
-    width:12rem;    
-    border-radius: 0.5rem;
-    border: soli gold 0.1rem;
-}
-
-.hamburger {
-  position: relative;
-  height: 11.75vh;
-  float: right;
-  padding: 0.8rem 0.8rem 0 0;
-
-  @include desktop{
-    visibility: hidden;
-  }
-  @include tablet{
-    visibility:visible;
-  }
-   
-}
-
