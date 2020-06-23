@@ -1,143 +1,99 @@
 .navigationBar{
-    height: 15vh;
+    height: 15.5vh;
     width: 100vw;
     z-index: 2;
     background-color:rgba((color(clear)), 1);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     border-radius: 2rem;
-    @include laptop{
-        display:flex;
-        align-items:center;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    @include tablet{
-      @include flex-collum{
-
-      }
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .logo{
     height:14vh;
     width: auto;
-    padding-top: 0.2rem;
+    padding:3rem;
+    
     @include flex-collum{
+     
+        #logo-circle{
+          max-height:65%; 
+        }
+        #logo-name{
+          height:40%;
+        }
         img{
-            align-items:center;
-            max-width: 100%;
-            max-height: 60%;
+          align-items: center;
+          max-width: 100%;
         }
     }
 }
 
 .nav-menu {
+  display: block;
     height: 0;
-    padding-bottom: 0.5rem;
-    list-style-type: none;
-    overflow: hidden;
+    display: flex;
+    padding:2%;
+    list-style: none;
+    align-items: center;
     a{
-      font-size: 1rem;
       text-decoration: none;
       color: black;
-      text-align: center;
-      margin: 1rem auto;
     }
-    @include laptop{
-    padding: 0;
-    height:100%;
-    width:45%;
-    display: flex;
-    align-items: center;
-      a {
-        font-size: 1.8rem;
-        padding: 1.5rem 1.5rem;
-        display: block;
-      }
-      @include tablet{
-        height:5rem;
-        width:30%;
-        text-align:right;
-        float:left;
-        display:none;
-      
-      a{
-        font-size:1.2rem;
-        padding: .7rem .7rem;
-      }
-      .nav-menu:hover{
-        display:block;
-      }
-    }
-  }
+
 }
 .nav-items{
-  margin:3%;
-}
-.nav-sections{
-  max-height:100%;
+  position: relative;
+  font-size: 1.8rem;
+  padding: 1rem 1.8rem;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
   display:block;
-  padding:5%;
 }
 .sub-nav {
-    display: none;
-    width: 15rem;
-    z-index: 1;
-    overflow: auto;
-      a{
+    display:none;
+    position: absolute;
+    width: 12rem;
+    list-style: none;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    padding:1rem;
+    border-radius: 0px 0px 5px 5px;
+    a{
+      text-decoration: none;
       color: rgb(190, 138, 7);
-      background-color: white;
+      display: block;
       text-align: center;
-      padding:3px 5px;
-      }
-      a:hover{
-      border-radius: 1.2rem;
-      border: solid black 0.2rem;
-      background-color:rgba(gold, 0.6);
-      }
+      padding: 7px 0px;
+    }
 }
- .sub-nav:hover .nav-sections:before{
-    display:block;
-} 
-  .nav-items:hover .sub-nav{
-    border-radius:0px 0px 10px 10px;
+
+
+.nav-sections:hover{
+  background-color: rgb(2255, 218, 8);
+  border-radius: 1.2rem;
+  border: 0.2rem solid black;
+  display: block;
+  padding:1rem;
+}
+
+.nav-items:hover .sub-nav {
     display: block;
-    width:14rem;
-    padding:5px;
-    text-align:center;
-    align-items:center;
-    position:absolute;
-    background-color:white;
-    
+    overflow: hidden;
   }
 
-
-.nav-sections { 
-    position:relative;
-    color: black;
-    
-}
-.nav-sections:hover{
-  display:block;
-    margin-bottom:15px;
+.sub-nav a:hover{
     background-color: rgb(255, 218, 8);
     border-radius: 1.2rem;
     border: 0.2rem solid black;
 }
-
-
-.hamburger {
-  position: absolute;
-  height: 8vh;
-  float: right;
-  padding: 0.8rem 0.8rem 0 0;
-
-  @include desktop{
-    visibility:hidden;
-  }
-  @include tablet{
-    visibility:visible;
-  }
+.nav-sections:before {
+  position: fixed;
+  align-items: center;
+  display: block;
 }
-

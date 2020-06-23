@@ -1,0 +1,232 @@
+//anouncements
+
+.Calendar {
+    margin-top: 10vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    @include phone{
+        height: 140vh;
+        font-size: 1rem;
+        justify-content: center;   
+    }
+}
+   
+    
+.Calendar-header {
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+    @include tablet {
+        font-size: 3rem;
+    }
+    @include phone{
+       font-size: 3rem;
+    }
+}
+.user-gallery-gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.user-gallery-image{
+    width:90%;
+    padding: 1rem;
+}
+.user-gallery-gallery-gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+   
+}
+.user-gallery2-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    perspective: 150rem; 
+    -moz-perspective: 150rem;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   width:100%;
+}
+.card-side{
+    height: 500px;
+    width: 300px;
+    color: white;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+    @include tablet{
+        height: 300px;
+        width: 200px;
+    } 
+    @include phone{
+        height: 200px;
+        width: 100px;
+    }
+  
+}
+.card-side-front{
+    background-size: cover;
+    font-family: "Cookie";
+    background-color: black;
+    background-position: center;
+    height: 500px;
+    font-size: 50px;
+
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+    @include tablet{
+        height: 300px;
+        width: 200px;
+    }
+    @include phone{
+        height: 200px;
+        width: 100px;
+    }
+    
+}
+.card-side-back{
+    background-color: rgb(131, 24, 24);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+}
+.card:hover .card-side-front{
+    transform: rotateY(-180deg);
+}
+.card:hover .card-side-back{
+    transform: rotateY(0deg);
+}
+ 
+.card-side2{ 
+    height: 500px;
+    width: 300px;
+    background-color: black;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+    @include tablet{
+    height: 300px;
+    width: 200px;
+    }
+    @include phone{
+        height: 200px;
+        width: 100px;
+    
+    }
+}
+.card-side2-front{
+    background-size: cover;
+    font-family: "Cookie";
+    background-color: black;
+        color:white;
+    background-position: center;
+    height: 500px;
+    font-size: 50px;
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+    @include tablet{
+        height: 300px;
+        width: 200px;
+    }
+    @include phone{
+        height: 200px;
+        width: 100px;
+    }
+    
+}
+.card-side2-back{
+    background-color: rgb(131, 24, 24);
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+}
+.card:hover .card-side2-front{
+    transform: rotateY(-180deg);
+}
+.card:hover .card-side2-back{
+    transform: rotateY(0deg);
+}
+ 
+.card-side3{
+    height: 500px;
+    width: 300px;
+    color: white;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+    @include tablet{
+        height: 300px;
+        width: 200px;
+    }
+    @include phone{
+        height: 200px;
+        width: 100px;
+    }
+  
+}
+.card-side3-front{
+    background-size: cover;
+    font-family: "Cookie";
+    background-color: black;
+    background-position: center;
+    height: 500px;
+    font-size: 50px;
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+    @include tablet{
+        height: 300px;
+       width: 200px;
+    }
+    @include phone{
+        height: 200px;
+        width: 100px;
+    }
+    
+}
+.card-side3-back{
+    background-color: rgb(131, 24, 24);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+}
+.card:hover .card-side3-front{
+    transform: rotateY(-180deg);
+}
+.card:hover .card-side3-back{
+    transform: rotateY(0deg);
+}
+
+

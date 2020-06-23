@@ -1,64 +1,43 @@
 
 .welcomePage{
-    height:95vh;
+    height:75vh;
+    font-family: "Cookie";
     @include flex-collum{
 
     }
 }
+.welcomeText{
+    margin-top:4%;
+}
 .welcomeTitle{
     text-align: center;
-    z-index: 1;
     font-family: "Cookie";
+    font-size: 4.5rem;
+    z-index: 1;
     padding:2%;
     margin:2%;
-    @include laptop{
-        font-size: 4rem;
-    }
-    @include tablet{
-        font-size:2rem;
-    }
-    @include phone{
-        font-size: 1.5rem;
-    }
 }
-.welcomeSub{
+.welcomeSubtitle{
+
     text-align: center;
-    font-family: "Cookie";
-    @include desktop{
-        font-size: 3.5rem;
-    }
-    @include tablet{
-        font-size:2rem;
-    }
+    font-size: 4rem;
+    z-index: 1;
+
 }
 .welcomeParagraph{
     text-align: center;
-    font-family: "Cookie";
-    width:58vw;
-    @include desktop{
-        font-size: 2.5rem;
-    }
-    @include tablet{
-        font-size:1.7rem;
-    }
+    font-size:2.7rem;
+    max-width:60vw;
+    align-items:center;
+    display:blcok;
+    
+
 }
 .video-container{
-    margin-top:-2%;
-    width:auto;
+    height:50vh;
     border: solid 2px white;
     video{
-        width:100%;
-        height:100%;
+        height: 100%;
         align-items:center;
     }
-    @include desktop{
-        height:65vh;
-    }
-    @include laptop{
-        height:50vh;
-    }
-    @include tablet{
-        height:40vh;
-    }
-    
 }
