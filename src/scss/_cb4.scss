@@ -1,8 +1,15 @@
+.cb4{
+  height: 50vh;
+  @include flex-row{
+
+  };
+}
 .pictures-header {
     font-size: 5rem;
     color: white;
     text-transform: uppercase;
     align-items: center;
+    text-align: center;
     @include tablet {
         font-size: 3rem;
     }

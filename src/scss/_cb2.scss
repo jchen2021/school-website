@@ -1,5 +1,5 @@
 .CB2{
-    margin-top:10vh;
+    margin-top:15vh;
     height:50vh;
     width:100%;
     background-color: rgba(black, 0.8);
@@ -19,11 +19,8 @@
         padding:5%;
         width: auto;
         height:80%;
-        @include tablet{
-            height:70%;
-        }
-        @include phone{
-            height: 45%;
+        @include ipadHorizontal{
+            height:75%;
         }
     }
 }
@@ -42,7 +39,18 @@
         font-size: 1rem;
     }
 }
+.message-container{
+    background-color: transparent;
+    width: 50%;
+    height: 75%;
+    border: 1px solid #f1f1f1;
+    align-items: center;
+  }
+  .message-viewSize{
+      @include flex-collum{
 
+      }
+  }
 .readMore{
     color: rgb(238, 215, 219);
     font-style: underline;
@@ -51,8 +59,8 @@
     @include desktop{
         font-size: 1.8rem;
     }
-    @include tablet{
-        font-size: 1.2rem;
+    @include ipadHorizontal{
+        font-size: 1.5rem;
     }
     @include phone{
         font-size: 0.8rem;
@@ -60,20 +68,25 @@
 }
 
 .message-main{
-    padding:3%;
-    width:73vh;
+    padding:2%;
     text-align: center;
     color: rgb(247, 238, 225);
     @include desktop{
+        width:45vw;
         font-size: 2rem;
     }
     @include laptop{
+        margin-top: -3.5%;
+        width:45vw;
         font-size: 1.8rem;
     }
-    @include tablet{
-        font-size: 1rem;
+    @include ipadHorizontal{
+        width:40vw;
+        padding:0;
+        font-size: 1.8rem;
     }
     @include phone{
+        width: 30vw;
         font-size: 0.8rem;
     }
 }

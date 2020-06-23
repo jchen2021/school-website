@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200vh;
+    height: 100vh;
     @include phone{
         height: 140vh;
         font-size: 1rem;
@@ -26,7 +26,7 @@
     @include phone{
        font-size: 3rem;
     }
-}
+}/* 
 .user-gallery-gallery{
     width: 100%;
     display: flex;
@@ -54,16 +54,21 @@
     justify-content: center;
     align-items: center;
     
+} */
+.actual-cards{
+    @include flex-row{
+
+    };
 }
 .card{
     perspective: 150rem; 
-    -moz-perspective: 150rem;
     position: relative;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
    width:100%;
+
 }
 .card-side{
     height: 500px;
@@ -84,7 +89,7 @@
 .card-side-front{
     background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: black;
+    background-color: white;
     background-position: center;
     height: 500px;
     font-size: 45px;
@@ -101,6 +106,10 @@
         width: 100px;
     }
     
+}
+.card-text{
+    background-color: black;
+    height:30%;
 }
 .card-side-back{
     background-color: rgb(131, 24, 24);
@@ -139,7 +148,7 @@
 .card-side2-front{
     background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: black;
+    background-color: white;
         color:white;
     background-position: center;
     height: 500px;
@@ -194,7 +203,7 @@
 .card-side3-front{
     background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: black;
+    background-color: white;
     background-position: center;
     height: 500px;
     font-size: 48px;

@@ -16,6 +16,9 @@
     z-index: 1;
     padding:2%;
     margin:2%;
+    @include ipadHorizontal{
+        font-size:2.8rem;
+    }
 }
 .welcomeSubtitle{
 
@@ -30,14 +33,31 @@
     max-width:60vw;
     align-items:center;
     display:blcok;
-    
+    @include desktop{
+        max-width: 50vw;
+    }
+    @include laptop{
+        font-size: 2.2rem;
+    }
+    @include ipadHorizontal{
+        max-width: 50vw;
+        font-size: 2.5rem;
+    }
+
 
 }
 .video-container{
     height:50vh;
     border: solid 2px white;
     video{
-        height: 100%;
+        width: 100%;
         align-items:center;
     }
+    @include desktop{
+        width:50vw;
+        height:auto;
+    }
+    @include ipadHorizontal{
+        width: 95vw;
+}
 }

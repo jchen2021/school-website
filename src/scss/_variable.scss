@@ -10,9 +10,9 @@ $colors:(
 }
 
 $anim-speed: 0.3s;
-$phone: 450px;
+$phone: 400px;
 $tablet: 900px;
-$ipad:1100px;
+$ipadHorizontal:1100px;
 $laptop:  1700px;
 $desktop: 2100px;
 
@@ -28,7 +28,7 @@ $desktop: 2100px;
     }
   }
   @mixin ipadHorizontal {
-    @media(max-width:#{$ipad}){
+    @media(max-width:#{$ipadHorizontal}){
       @content;
     }
     
