@@ -530,11 +530,11 @@
 
 .card-side-front {
   background-size: cover;
-  font-family: "Cookie";
+  font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: black;
   background-position: center;
   height: 500px;
-  font-size: 50px;
+  font-size: 45px;
   position: relative;
   z-index: 1;
   -webkit-transition: all 1s;
@@ -605,12 +605,12 @@
 
 .card-side2-front {
   background-size: cover;
-  font-family: "Cookie";
+  font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: black;
   color: white;
   background-position: center;
   height: 500px;
-  font-size: 50px;
+  font-size: 48px;
   position: relative;
   z-index: 1;
   -webkit-transition: all 1s;
@@ -681,11 +681,11 @@
 
 .card-side3-front {
   background-size: cover;
-  font-family: "Cookie";
+  font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: black;
   background-position: center;
   height: 500px;
-  font-size: 50px;
+  font-size: 48px;
   position: relative;
   z-index: 1;
   -webkit-transition: all 1s;
@@ -765,8 +765,14 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 50rem;
+  width: 40rem;
   border-width: 50%;
+}
+
+@media (max-width: 450px) {
+  #sm1 {
+    width: 30rem;
+  }
 }
 
 #sm2:hover {
@@ -783,8 +789,14 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 50rem;
+  width: 40rem;
   border-width: 50%;
+}
+
+@media (max-width: 450px) {
+  #sm2 {
+    width: 30rem;
+  }
 }
 
 #sm3:hover {
@@ -801,8 +813,14 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 50rem;
+  width: 40rem;
   border-width: 50%;
+}
+
+@media (max-width: 450px) {
+  #sm3 {
+    width: 10rem;
+  }
 }
 
 html {

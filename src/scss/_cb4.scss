@@ -21,8 +21,11 @@
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     flex-grow: 1;
-    width:50rem;
+    width:40rem;
     border-width: 50%;
+    @include phone{
+      width:30rem;
+   }
 }
 
 #sm2:hover{
@@ -36,8 +39,11 @@
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
       flex-grow: 1;
-      width:50rem;
+      width:40rem;
       border-width: 50%;
+      @include phone{
+        width:30rem;
+     }
   }
   #sm3:hover{
     -webkit-filter: grayscale(0%);
@@ -50,6 +56,9 @@
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
       flex-grow: 1;
-      width:50rem;
+      width:40rem;
       border-width: 50%;
+      @include phone{
+        width:10rem;
+     }
   }
