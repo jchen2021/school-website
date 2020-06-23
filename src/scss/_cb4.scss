@@ -1,6 +1,6 @@
 .cb4{
   height: 50vh;
-  @include flex-row{
+  @include flex-collum{
 
   };
 }
@@ -28,10 +28,10 @@
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     flex-grow: 1;
-    width:40rem;
+    width:30rem;
     border-width: 50%;
     @include phone{
-      width:30rem;
+      width:20rem;
    }
 }
 
@@ -46,10 +46,10 @@
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
       flex-grow: 1;
-      width:40rem;
+      width:30rem;
       border-width: 50%;
       @include phone{
-        width:30rem;
+        width:20rem;
      }
   }
   #sm3:hover{
@@ -63,9 +63,9 @@
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
       flex-grow: 1;
-      width:40rem;
+      width:30rem;
       border-width: 50%;
       @include phone{
-        width:10rem;
+        width:20rem;
      }
   }

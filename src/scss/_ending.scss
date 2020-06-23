@@ -1,0 +1,38 @@
+.ending-bar{
+    background-color: white;
+    height:20vh;
+    width: 65vw;
+    border-radius: 3rem;
+    border: 2px solid black;
+    text-align: center;
+    @include flex-row{
+
+    };
+    @include ipadHorizontal{
+        width:95vw;
+    }
+}
+.logo-end{
+    width: 20%;
+    padding:3rem;
+    
+    @include flex-collum{
+     
+        #logo-circle{
+          max-height:75%; 
+        }
+        #logo-name{
+          height:60%;
+        }
+        img{
+          align-items: center;
+          max-width: 100%;
+        }
+    }
+}
+.contact-info{
+    width: 60%;
+    font-weight: bold;
+    font-size: 2.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
