@@ -1,8 +1,8 @@
 .CB2{
-    top:0;
-    height:55vh;
+    margin-top:10vh;
+    height:50vh;
     width:100%;
-    background-color: rgba($color: #000000, $alpha: 0.8);
+    background-color: rgba(black, 0.8);
     font-family: Georgia, 'Times New Roman', Times, serif;
     @include desktop{
         @include flex-row{
@@ -29,11 +29,9 @@
 }
 
 .title{
-    padding:1.5%;
     color: goldenrod;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    border-bottom: 5px solid rgba(pink, 0.6);
     @include desktop{
         font-size: 3.5rem;
     }
@@ -46,21 +44,15 @@
 }
 
 .readMore{
-    display:block;
-    color: gold;
+    color: rgb(238, 215, 219);
     font-style: underline;
     font-size: 1.5rem;
     text-align: right;
-    float:right;
     @include desktop{
-        font-size: 2.2rem;
-    }
-    @include laptop{
         font-size: 1.8rem;
-
     }
     @include tablet{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     @include phone{
         font-size: 0.8rem;
@@ -68,17 +60,15 @@
 }
 
 .message-main{
-    padding:2%;
-    margin:5%;
+    padding:3%;
+    width:73vh;
+    text-align: center;
     color: rgb(247, 238, 225);
-    text-align:center;
     @include desktop{
-        margin-top:2%;
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     @include laptop{
-        font-size: 1.7rem;
-        margin-top:-3.3%;
+        font-size: 1.8rem;
     }
     @include tablet{
         font-size: 1rem;
